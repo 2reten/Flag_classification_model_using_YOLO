@@ -9,6 +9,7 @@
 
  - This project aims to recognize images of national flags and output information about the translator's function and the country it represents.
  - 본 프로젝트는 국기의 이미지를 인식해 번역기의 기능과 해당 국가에 대한 정보를 출력하는 것을 목표로 하고 있습니다.
+   
 **Project Table of Contents**
 - Collecting data
   - Decided that collecting flag image data for every country would be too time-consuming, so focused on 20 countries.
