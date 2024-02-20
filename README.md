@@ -26,36 +26,38 @@
 
 <div align=center>
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/selenium-4FC08D?style=for-the-badge&logo=selenium&logoColor=white">
-<img src="https://img.shields.io/badge/plotly-000000?style=for-the-badge&logo=plotly&logoColor=white">
+<img src="https://img.shields.io/badge/CNN-CC0000?style=for-the-badge&logo=CNN&logoColor=white">
+<img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white">
 <img src="https://img.shields.io/badge/jupyter-232F3E?style=for-the-badge&logo=jupyter&logoColor=white">
-<img src="https://img.shields.io/badge/pandas-F05032?style=for-the-badge&logo=pandas&logoColor=white">
+<img src="https://img.shields.io/badge/Pycharm-000000?style=for-the-badge&logo=pycharm&logoColor=white">
+<img src="https://img.shields.io/badge/google colab-F9AB00?style=for-the-badge&logo=google colab&logoColor=white">
 <br>
 </div>
 
 ## 프로젝트 목표 및 동기
 **Project goals and motivation**
-- The main goal of this project is to understand and analyze the political leanings of various media outlets on the issue of contaminated water discharge from the Fukushima nuclear power plant. As the media's approach to environmental issues has a great impact on shaping social consciousness and public debate, we hope to gain insight into the interaction between political positions and the media by understanding how each media outlet is reacting to this issue. In addition, this project aims to contribute to international comparative media research by conducting accurate sentiment analysis taking into account language differences and cultural characteristics.
+- This project develops an object detection model that utilizes YOLO to classify national flags. It effectively identifies flags used in various multicultural communities to highlight cultural diversity and promote mutual understanding in a multicultural society. To improve the accuracy of the model, we go through steps such as data collection, labeling, and data multiplication, aiming to detect accurate objects for each flag. We also visualize the model through a web page, allowing users to check and interact with the model's predictions for various flags. This contributes to highlighting cultural diversity and promoting mutual understanding in a multicultural society.
 
-- 이 프로젝트의 주된 목표는 후쿠시마 원전에서 발생한 오염수 방류 문제에 대한 다양한 언론사들의 정치적 성향을 이해하고 분석하는 것입니다. 환경 문제에 대한 언론의 접근 방식은 사회적 의식을 형성하고 공론화하는 데 큰 영향을 미치기 때문에, 각 언론사가 이 문제에 어떻게 반응하고 있는지를 파악함으로써 정치적 입장과 언론의 상호작용에 대한 통찰을 얻고자 합니다. 또한, 이 프로젝트는 언어 간의 차이와 문화적 특성을 고려하여 정확한 감정 분석을 수행함으로써 국제적인 언론 비교 연구에 기여하고자 합니다.
-
+- 이 프로젝트는 YOLO를 활용하여 국기를 분류하는 객체 감지 모델을 개발합니다. 다양한 다문화 커뮤니티에서 사용되는 국기를 효과적으로 식별하여 문화 다양성을 강조하고 다문화 사회에서 상호이해를 촉진합니다. 모델의 정확성 향상을 위해 데이터 수집, 라벨링, 데이터 증식 등의 단계를 거치며, 각 국기에 대한 정확한 객체 감지를 목표로 합니다. 또한, 웹 페이지를 통해 모델을 시각화하여 사용자들이 다양한 국기에 대한 모델의 예측을 확인하고 상호작용할 수 있도록 합니다. 이를 통해 문화적 다양성을 강조하고 다문화 사회에서의 상호이해를 촉진하는 데 기여합니다.
+  
 ## 프로젝트 진행 과정
 **Project progression**
 
-- Crawling process
+- Data labeling process
   
-![ezgif com-crop](https://github.com/2reten/Vis_Project/assets/145303952/7f1f8978-8140-4c8f-b1f2-7b2aa4fe5f89)
+ ![ezgif-3-5c127d029d-ezgif com-video-to-gif-converter](https://github.com/2reten/ML-DL-Project/assets/145303952/6b392ffb-fc57-47f5-86df-e263dfb3a8e6)
 
 - Final result
-<div>
-  <a href="https://plotly.com/~2reten/20/" target="_blank">
-    <img src="https://plotly.com/~2reten/20.png" alt="Interactive Chart"/>
-  </a>
-</div>
+  
+![unnamed (2)](https://github.com/2reten/ML-DL-Project/assets/145303952/522d172f-93fb-40d4-82c0-53ffc825e29a)
+
+![unnamed (1)](https://github.com/2reten/ML-DL-Project/assets/145303952/cd60ca21-b3b6-4fd8-b2e8-df20e41c630b)
+
+
 
 
 ## 문제점과 한계
 **Issues and limitations**
-- The main problem we encountered during the project was the difficulty in accurately conveying contextual differences between languages. Failure to account for the variations in vocabulary and expression that occur during translation can compromise the accuracy of sentiment analysis. In addition, current sentiment analysis algorithms may not take into account the importance of certain vocabulary because they weight each word in bulk. This can make it difficult to accurately determine the topics or tone that a particular journalist is emphasizing. In future research, we hope to overcome these issues by introducing more sophisticated models that better understand context and weight sentiment analysis.
+- The main problem we faced during the project was not only the performance of the model, but also its accuracy. If a model is only adapted to a specific background, its performance in classifying flags in other environments can be compromised. If it relies too heavily on the features of a specific environment, it can have difficulty classifying flags in less common backgrounds. Furthermore, flags can come in different sizes and proportions. If your model is only adapted to a specific size, it may have difficulty recognizing flags of different sizes correctly. To reduce sensitivity to size variations, it is necessary to utilize data augmentation techniques or train the model by incorporating images of flags of different sizes.
   
-- 프로젝트를 수행하면서 마주한 주요 문제점은 언어 간의 문맥 차이를 정확하게 전달하기 어렵다는 것입니다. 번역 과정에서 발생하는 어휘와 표현의 다양성을 고려하지 못하면 감정 분석의 정확성이 저하될 수 있습니다. 또한, 현재의 감정 분석 알고리즘은 각 단어의 가중치를 일괄적으로 적용하므로 특정 어휘의 중요성을 고려하지 못할 수 있습니다. 이로 인해 특정 언론사가 강조하는 주제나 어조를 정확하게 파악하기 어려울 수 있습니다. 향후 연구에서는 문맥을 보다 잘 이해하고 감정 분석에 가중치를 부여하는 더 정교한 모델을 도입하여 이러한 문제를 극복하고자 합니다.
+- 프로젝트를 수행하면서 마주한 주요 문제점은 모델의 성능 뿐만이 아닌 정확도 역시도 뛰어나지 않다는 것이었습니다. 모델이 특정 배경에만 적응되어 있으면, 다른 환경에서의 국기 분류 성능이 저하될 수 있습니다. 특정 환경의 특징에 지나치게 의존하면, 일반적이지 않은 배경에서 국기를 제대로 분류하기 어려울 수 있습니다. 뿐만 아니라, 국기는 다양한 크기와 비율로 존재할 수 있습니다. 모델이 특정 크기에만 적응되어 있다면, 다양한 크기의 국기를 올바르게 인식하기 어려울 수 있습니다. 크기 변형에 대한 민감성을 감소시키기 위해서는 데이터 증식 기법을 활용하거나, 다양한 크기의 국기 이미지를 통합하여 모델을 학습시키는 것이 필요합니다.
